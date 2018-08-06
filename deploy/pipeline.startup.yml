@@ -191,31 +191,4 @@ Resources:
           InputArtifacts:
           - Name: Source
           RunOrder: 1
-      - Name: Build
-        Actions:
-        - Name: BuildAndTestApp
-          ActionTypeId:
-            Category: Build
-            Owner: AWS
-            Provider: CodeBuild
-            Version: 1
-          Configuration:
-            ProjectName: !Ref AppProject
-          InputArtifacts:
-          - Name: Source
-          OutputArtifacts:
-          - Name: App
-          RunOrder: 1
-        - Name: BuildAndTestAcceptance
-          ActionTypeId:
-            Category: Build
-            Owner: AWS
-            Provider: CodeBuild
-            Version: 1
-          Configuration:
-            ProjectName: !Ref AcceptanceProject
-          InputArtifacts:
-          - Name: Source
-          OutputArtifacts:
-          - Name: Acceptance
-          RunOrder: 1
+      
