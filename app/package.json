@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/electronicbits/helloworld#readme",
   "dependencies": {
-    
+    "@electronicbits/test-package": "^1.0.1",
     "express": "^4.16.2"
   },
   "devDependencies": {
